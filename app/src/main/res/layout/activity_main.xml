@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btCoroutine"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="协程" />
+
+        <Button
+            android:id="@+id/btBottom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="抽屉" />
+
+        <Button
+            android:id="@+id/btRx"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="RxJava" />
+
+        <Button
+            android:id="@+id/btHome"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="仿酷安首页" />
+
+        <Button
+            android:id="@+id/btEQ"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="音效器" />
+
+    </LinearLayout>
+</ScrollView>

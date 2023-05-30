@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EQ Enable"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/eqEnableCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dedede"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvInputGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="InputGain:0"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/sbInputGain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ATTACK" />
+
+            <EditText
+                android:id="@+id/etAttack"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="RELEASE" />
+
+            <EditText
+                android:id="@+id/etRelease"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="740" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="RATIO" />
+
+            <EditText
+                android:id="@+id/etRatio"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THRESHOLD" />
+
+            <EditText
+                android:id="@+id/etThreshold"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-33" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="POST_GAIN" />
+
+            <EditText
+                android:id="@+id/etGain"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btLimiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LimiterApply"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eqLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dedede"
+            android:orientation="vertical"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>
